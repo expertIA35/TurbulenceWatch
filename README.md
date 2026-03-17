@@ -25,6 +25,27 @@ This project bridges the gap between ground-based infrasound research (NASA Lang
 
 ---
 
+## 🏗️ Technical Architecture
+```mermaid
+graph TD
+    subgraph "PHASE 1: DATA SIMULATION"
+        A[Von Karman Physical Model] --> B(Infrasonic Noise Gen)
+        C[Cockpit Ambient Noise] --> D(Hybridization Engine)
+        B --> D
+    end
+
+    subgraph "PHASE 2: EDGE AI PIPELINE"
+        D --> E{Feature Extraction}
+        E --> F[Quantized CNN - 70KB]
+        F --> G[Turbulence Probability]
+    end
+
+    subgraph "PHASE 3: SPATIAL MAPPING"
+        G --> H[GPS Data Fusion]
+        H --> I[Plotly 3D Interactive Map]
+    end
+```
+
 ## 🛠️ Project Structure
 - `scripts/`: Python framework for data generation, training, and 3D visualization.
 - `tasks/`: Detailed PhD roadmap and technical requirements.
