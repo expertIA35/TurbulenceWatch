@@ -1,0 +1,44 @@
+# ML Models (Private Brains)
+models/*.h5
+models/*.tflite
+models/*.joblib
+models/*.h
+models/*.joblib
+models/baseline/
+models/neural/
+models/final/
+
+# Datasets (Private Data)
+data/raw/
+data/hybrid/
+data/processed/
+data/metadata/*.csv
+
+# Visuals & Reports (Keep some for local use only)
+# docs/reports/
+
+# Python environment
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv/
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project documentation & tasks (Keep these public)
+!README.md
+!DOC_RECHERCHE_DOCTORAT.md
+!DOC_PI_STRATEGY.md
+!MASTER_PLAN.md
+!tasks/*.md
